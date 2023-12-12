@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<body>
+  <body id="u">
+    
+  </body>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/a2673a891a.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="new.css">
+ 
+<body>
+
+<h3></h3>
+  <div class="card">
+    <form class="form" action="">
+<span></span>
+   
+
+<input type="text" class="masseg">
+<br>
+<br>
+
+<button class="msg1">send message</button>
+<br>
+<br>
+<button class="msg2">clear message</button>
+<br>
+<br>
+</form>
+  </div>
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+$('.msg1').on("click",function(e){
+  $('p').fadeIn()
+  $('span').replaceWith("<p>" +$('input').val()+ "</p>");
+
+  e.preventDefault();
+
+
+
+})
+$('.msg2').click(function(t){
+t.preventDefault();
+$('p').hide()
+
+
+
+})
+
+
+})
+
+
+
+</script>
+</html>
